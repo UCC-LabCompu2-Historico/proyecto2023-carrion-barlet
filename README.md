@@ -1,5 +1,13 @@
-# proyecto2023
-Estructura de Proyecto Lab de Compu II - 2023
+# AirFacu
+Pagina de la compania de aerolineas AirFacu
+
+## Autores
+* Vanessa Carrion
+* Léa Barlet
+
+## Tecnologias Usadas
+* HTML5
+* CSS3
 
 ## Requisitos del Primer Parcial
 
