@@ -1,3 +1,41 @@
 h1{
-    color: #023047
+    color: #023047;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    margin-top: 3px;
+}
+
+h4{
+    color: #023047;
+    font-family: 'Jost', sans-serif;
+}
+
+p{
+    color: #023047;
+}
+
+p.img_logo{
+    float: left;
+    margin: 10px 0 10px 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin-left: 250px;
+    margin-top: -90px;
+    overflow: hidden;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: #023047;
+    text-align: center;
+    padding: 5px 20px;
+    text-decoration: none;
+}
+
+li a:hover {
+    text-decoration-line: underline;
 }
