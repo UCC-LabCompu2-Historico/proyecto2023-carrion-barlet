@@ -8,6 +8,7 @@ h2{
     color: #023047;
     font-family: 'Poppins', sans-serif;
     font-size: 50px;
+    text-align: center;
 }
 
 h3{
@@ -144,28 +145,29 @@ li a:hover {
 
 
 div.viaje {
-    background-image: linear-gradient(to bottom right, #D3EDFC, #219EBC);
+    background-color: #219EBC;
     border-radius: 30px;
     padding: 50px;
     margin: 100px 70px 50px 70px;
 
 }
 div.preguntas{
+    text-align: center;
     margin-top: 100px;
     padding-bottom: 1px;
 }
 div.noEncuentro {
     text-align: center;
-    background-image: linear-gradient(to bottom right, #D3EDFC, #219EBC);
-    border-radius: 10px;
+    background-color: #D3EDFC;
+    border-radius: 30px;
     padding: 5px;
     margin: 100px 70px 50px 70px;
 }
 
 div.dimEquipajeMano,div.transportarAnimal {
     text-align: center;
-    background-image: linear-gradient(to bottom right, #D3EDFC, #219EBC);
-    border-radius: 10px;
+    background-color: #D3EDFC;
+    border-radius: 30px;
     padding: 5px;
     margin: 0 70px 50px 70px;
 }
@@ -173,7 +175,7 @@ div.dimEquipajeMano,div.transportarAnimal {
 div.conectarse{
     text-align: center;
     background-color: #D3EDFC;
-    border-radius: 10px;
+    border-radius: 30px;
     padding: 5px;
     margin: 100px 70px 50px 70px;
 }
@@ -188,4 +190,6 @@ div.conectarse{
     border-radius: 10px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
 }
-
+div {
+    border: double rgba(245, 245, 245, 0);
+}
