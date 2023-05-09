@@ -4,19 +4,28 @@ h1{
     font-size: 40px;
     margin-top: 3px;
 }
-
+h2{
+    color: #023047;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+}
 h4{
     color: #023047;
     font-family: 'Jost', sans-serif;
 }
 
 p{
+    font-family: 'Jost', sans-serif;
     color: #023047;
 }
 
 p.img_logo{
     float: left;
     margin: 10px 0 10px 10px;
+}
+
+a {
+    text-decoration: none;
 }
 
 ul {
@@ -90,8 +99,30 @@ li a:hover {
     border: none;
     text-align: center;
     display: inline-block;
-    padding: 10px 10px;
+    padding: 5px 5px;
     border-radius: 10px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
+}
+
+.btn_buscar {
+    font-family: 'Jost', sans-serif;
+    color: #F5F5F5;
+    background-color: #219EBC;
+    border: none;
+    text-align: center;
+    display: inline-block;
+    padding: 5px 5px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
+}
+
+div{
+    border: 2px double #023047;
+}
+div.viaje {
+    background-image: linear-gradient(to bottom right, #D3EDFC, #219EBC);
+    border-radius: 30px;
+    padding: 50px;
+    margin: 100px 70px 50px 70px;
 
 }
