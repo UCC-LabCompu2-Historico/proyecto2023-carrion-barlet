@@ -147,8 +147,9 @@ div.viaje {
 }
 div.preguntas{
     margin-top: 100px;
+    padding-bottom: 1px;
 }
-div.noEncuentro,div.dimEquipajeMano,div.transportarAnimal{
+div.noEncuentro {
     text-align: center;
     background-image: linear-gradient(to bottom right, #D3EDFC, #219EBC);
     border-radius: 10px;
@@ -156,6 +157,16 @@ div.noEncuentro,div.dimEquipajeMano,div.transportarAnimal{
     margin: 100px 70px 50px 70px;
 }
 
+div.dimEquipajeMano,div.transportarAnimal {
+    text-align: center;
+    background-image: linear-gradient(to bottom right, #D3EDFC, #219EBC);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 0 70px 50px 70px;
+}
 
 
+div{
+    border : double;
+}
 
