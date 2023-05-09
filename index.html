@@ -14,25 +14,24 @@
 </head>
 
 <body>
+
 <header>
     <div>
-
         <p class="img_logo">
-            <img alt="logo" src="imagenes/avion.png" width="40">
+            <img id="logo" alt="logo" src="imagenes/avion.png">
         </p>
-
             <a href="index.html"><h1> AIRFACU </h1></a>
-
     </div>
 </header>
+
 <ul>
     <li> <a href="misReservas.html"><h4>Mis reservas</h4></a> </li>
     <li> <a href="Informacion.html"><h4>Informacion</h4></a> </li>
     <li class="dropdown">
-            <span class="img_globo">
-                <img alt="globo" src="imagenes/globe.png" width="19">
-            </span>
-            <button class="btn_drop">Idioma</button>
+        <span class="img_globo">
+            <img id="globo" alt="globo" src="imagenes/globe.png">
+        </span>
+        <button class="btn_drop">Idioma</button>
             <div class="dropdown-content">
                 <a>Espanol</a>
                 <a>English</a>
@@ -47,21 +46,27 @@
 <section>
     <div class="viaje">
         <p>
-            <select name="viaje">
+            <label for="viaje"></label>
+            <select id="viaje">
                 <option value="ida y vuelta"> Ida y vuelta </option>
                 <option value="solo ida"> Solo ida </option>
             </select>
         </p>
         <p>
-            Origen
-            <input type="text" name="origen">
-            Destino
-            <input type="text" name="destino">
+            <label for="origen">Origen</label>
+            <input type="text" name="origen" id="origen" placeholder="ej. Cordoba">
+            <label for="destino">Destino</label>
+            <input type="text" name="destino" id="destino" placeholder="ej. Miami">
         </p>
     </div>
+
+    <!-- utilisaremos el canva con la imagen del mapa con javascript para dibujar el trayecto del avion del origen hasta el destino-->
+    <canvas id="myCanvas" width="200" height="100"></canvas>
+
     <div>
-        <img id="map" src="imagenes/continentes-de-la-tierra.png">
+        <img id="map" src="imagenes/continentes-de-la-tierra.png" alt="map">
     </div>
 </section>
+
 </body>
 </html>

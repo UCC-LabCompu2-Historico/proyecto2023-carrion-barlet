@@ -1,57 +1,57 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>AirFacu</title>
-  <meta content="Léa Barlet, Vanessa Carrion" name="autor">
-  <meta content="Web de aerolineas AirFacu" name="descripcion">
-  <meta content="aerolinea, avion, AirFacu" name="palabras-principales">
-  <link rel="stylesheet" href="miEstilo.css" type="text/css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="shortcut icon" href="imagenes/avion.png" >
-  <link href="https://fonts.googleapis.com/css2?family=Jost&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>AirFacu</title>
+    <meta content="Léa Barlet, Vanessa Carrion" name="autor">
+    <meta content="Web de aerolineas AirFacu" name="descripcion">
+    <meta content="aerolinea, avion, AirFacu" name="palabras-principales">
+    <link rel="stylesheet" href="miEstilo.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="imagenes/avion.png" >
+    <link href="https://fonts.googleapis.com/css2?family=Jost&family=Poppins:wght@700&display=swap" rel="stylesheet">
 </head>
+
 <body>
+
 <header>
-  <div>
-
-    <p class="img_logo">
-      <img alt="logo" src="imagenes/avion.png" width="40">
-    </p>
-
-    <a href="index.html"><h1> AIRFACU </h1></a>
-
-  </div>
-</header>
-<ul>
-  <li> <a href="misReservas.html"><h4>Mis reservas</h4></a> </li>
-  <li> <a href="Informacion.html"><h4>Informacion</h4></a> </li>
-  <li class="dropdown">
-            <span class="img_globo">
-                <img alt="globo" src="imagenes/globe.png" width="19">
-            </span>
-    <button class="btn_drop">Idioma</button>
-    <div class="dropdown-content">
-      <a>Espanol</a>
-      <a>English</a>
-      <a>Français</a>
+    <div>
+        <p class="img_logo">
+            <img id="logo" alt="logo" src="imagenes/avion.png">
+        </p>
+        <a href="index.html"><h1> AIRFACU </h1></a>
     </div>
-  </li>
-  <li class="btn">
-    <button class="btn_conectarse"><a href="Conectarse.html">Conectarse</a></button>
-  </li>
+</header>
+
+<ul>
+    <li> <a href="misReservas.html"><h4>Mis reservas</h4></a> </li>
+    <li> <a href="Informacion.html"><h4>Informacion</h4></a> </li>
+    <li class="dropdown">
+        <span class="img_globo">
+            <img id="globo" alt="globo" src="imagenes/globe.png">
+        </span>
+        <button class="btn_drop">Idioma</button>
+        <div class="dropdown-content">
+            <a>Espanol</a>
+            <a>English</a>
+            <a>Français</a>
+        </div>
+    </li>
+    <li class="btn">
+        <button class="btn_conectarse"><a href="Conectarse.html">Conectarse</a></button>
+    </li>
 </ul>
 
 
 <div class="noEncuentro">
-
   <h2>Próximos vuelos</h2>
-
   <p>
-    <img id="ImaTriste" src="imagenes/triste.png">
+    <img id="ImaTriste" src="imagenes/triste.png" alt="ImaTriste">
   </p>
-  <p>no tienes vuelos...</p>
+  <p>
+    No tienes vuelos...
+  </p>
   <p>
     <button class="btn_buscar"><a href="index.html">Buscar un vuelo</a></button>
   </p>

@@ -14,24 +14,23 @@
 </head>
 
 <body>
+
 <header>
   <div>
-
     <p class="img_logo">
-      <img alt="logo" src="imagenes/avion.png" width="40">
+      <img id="logo" alt="logo" src="imagenes/avion.png">
     </p>
-
     <a href="index.html"><h1> AIRFACU </h1></a>
-
   </div>
 </header>
+
 <ul>
   <li> <a href="misReservas.html"><h4>Mis reservas</h4></a> </li>
   <li> <a href="Informacion.html"><h4>Informacion</h4></a> </li>
   <li class="dropdown">
-            <span class="img_globo">
-                <img alt="globo" src="imagenes/globe.png" width="19">
-            </span>
+        <span class="img_globo">
+            <img id="globo" alt="globo" src="imagenes/globe.png">
+        </span>
     <button class="btn_drop">Idioma</button>
     <div class="dropdown-content">
       <a>Espanol</a>
@@ -47,19 +46,19 @@
 <div class="conectarse">
   <h2>Conectarse</h2>
   <p>
-    Email
-    <input type="text" name="email">
-    </p>
+    <label for="email">Email: </label>
+    <input type="email" name="email" id="email" placeholder="abc@gmail.com">
+  </p>
   <p>
-    Contrasena
-    <input type="text" name="contrasena">
+    <label for="password">Password: </label>
+    <input type="password" name="password" id="password" placeholder="Ingrese su password">
   </p>
   <h6>Contrasena olvidada?</h6>
   <p>
     <button class="btn_continuar"><a href="misReservas.html">Continuar</a></button>
   </p>
-  <h6>No tienes una cuenta ? <a href="index.html">Registrate</a></h6></div>
-
+  <h6>No tienes una cuenta ? <a href="index.html">Registrate</a></h6>
+</div>
 
 </body>
 </html>

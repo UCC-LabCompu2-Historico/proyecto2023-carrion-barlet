@@ -10,13 +10,11 @@ h2{
     font-size: 50px;
     text-align: center;
 }
-
 h3{
     margin-top: 1px;
     text-align: left;
     color: #023047;
     font-family: 'Poppins', sans-serif;
-
 }
 h4{
     color: #023047;
@@ -49,7 +47,12 @@ p.img_logo{
     margin-left: auto;
     margin-right: auto;
 }
-
+#globo{
+    width: 19px;
+}
+#logo{
+    width: 40px;
+}
 
 a {
     text-decoration: none;
@@ -97,7 +100,7 @@ li a:hover {
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 1;
 }
 
@@ -164,7 +167,7 @@ div.noEncuentro {
     margin: 100px 70px 50px 70px;
 }
 
-div.dimEquipajeMano,div.transportarAnimal {
+article.dimEquipajeMano,article.transportarAnimal {
     text-align: center;
     background-color: #D3EDFC;
     border-radius: 30px;
