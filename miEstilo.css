@@ -21,6 +21,11 @@ h4{
     color: #023047;
     font-family: 'Jost', sans-serif;
 }
+h6{
+    color: #023047;
+    font-family: 'Jost', sans-serif;
+    font-size: 10px;
+}
 
 p{
     font-family: 'Jost', sans-serif;
@@ -165,8 +170,22 @@ div.dimEquipajeMano,div.transportarAnimal {
     margin: 0 70px 50px 70px;
 }
 
-
-div{
-    border : double;
+div.conectarse{
+    text-align: center;
+    background-color: #D3EDFC;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 100px 70px 50px 70px;
+}
+.btn_continuar{
+    font-family: 'Jost', sans-serif;
+    color: #F5F5F5;
+    background-color: #219EBC;
+    border: none;
+    text-align: center;
+    display: inline-block;
+    padding: 10px 10px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
 }
 
