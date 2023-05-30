@@ -35,12 +35,7 @@ p.img_logo{
     float: left;
     margin: 10px 0 10px 10px;
 }
-#map{
-    width: 500px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 #ImaTriste{
     width: 100px;
     display: block;
@@ -195,4 +190,7 @@ div.conectarse{
 }
 div {
     border: double rgba(245, 245, 245, 0);
+}
+#myCanvas {
+    border: 1px solid grey;
 }

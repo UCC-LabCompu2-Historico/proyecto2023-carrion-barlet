@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="shortcut icon" href="imagenes/avion.png" >
     <link href="https://fonts.googleapis.com/css2?family=Jost&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="miScript.js"></script>
 </head>
 
 <body>
@@ -58,14 +59,18 @@
             <label for="destino">Destino</label>
             <input type="text" name="destino" id="destino" placeholder="ej. Miami">
         </p>
+        <p>
+            <button type="button" onclick="drawMap()">
+                Comprar
+            </button>
+        </p>
     </div>
 
     <!-- utilisaremos el canva con la imagen del mapa con javascript para dibujar el trayecto del avion del origen hasta el destino-->
-    <canvas id="myCanvas" width="200" height="100"></canvas>
-
-    <div>
-        <img id="map" src="imagenes/continentes-de-la-tierra.png" alt="map">
+    <div style="text-align: center">
+        <canvas id="myCanvas" width="800" height="550"></canvas>
     </div>
+
 </section>
 
 </body>
