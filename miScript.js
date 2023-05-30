@@ -63,4 +63,12 @@ function drawMap() {
         ctx.fillRect(330, 147 , 10 , 10)
     }
 
+    ctx.beginPath();
+    ctx.moveTo(330,147);
+    ctx.lineTo(150,180);
+    ctx.strokeStyle="#4488EE";
+    ctx.lineWidth=3;
+    ctx.stroke();
+
+
 }
