@@ -56,9 +56,22 @@
         <p>
             <form name="trayecto">
                 <label for="origen">Origen</label>
-                <input type="text" name="origen" id="origen" placeholder="ej. Cordoba">
+                <select id="origen">
+                    <option value="Buenos Aires"> Buenos Aires </option>
+                    <option value="Nueva York"> Nueva York </option>
+                    <option value="Paris"> Paris </option>
+                    <option value="Londres"> Londres </option>
+                </select>
+                <!--<input type="text" name="origen" id="origen" placeholder="ej. Cordoba">-->
                 <label for="destino">Destino</label>
-                <input type="text" name="destino" id="destino" placeholder="ej. Miami">
+                <select id="destino">
+                    <option value="Buenos Aires"> Buenos Aires </option>
+                    <option value="Nueva York"> Nueva York </option>
+                    <option value="Paris"> Paris </option>
+                    <option value="Londres"> Londres </option>
+                </select>
+
+               <!-- <input type="text" name="destino" id="destino" placeholder="ej. Miami"> -->
             </form>
         <p>
             <button type="button" onclick="drawMap()">
