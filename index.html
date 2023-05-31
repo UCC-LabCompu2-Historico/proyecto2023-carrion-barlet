@@ -56,22 +56,22 @@
         <p>
             <form name="trayecto">
                 <label for="origen">Origen</label>
-                <select id="origen">
+                <!--<select id="origen">
                     <option value="Buenos Aires"> Buenos Aires </option>
                     <option value="Nueva York"> Nueva York </option>
                     <option value="Paris"> Paris </option>
                     <option value="Londres"> Londres </option>
-                </select>
-                <!--<input type="text" name="origen" id="origen" placeholder="ej. Cordoba">-->
+                </select>-->
+                <input type="text" class="input_viaje" name="origen" id="origen" placeholder="ej. Cordoba" onchange="verifOrigen()">
                 <label for="destino">Destino</label>
-                <select id="destino">
+                <!--<select id="destino">
                     <option value="Buenos Aires"> Buenos Aires </option>
                     <option value="Nueva York"> Nueva York </option>
                     <option value="Paris"> Paris </option>
                     <option value="Londres"> Londres </option>
-                </select>
+                </select>-->
 
-               <!-- <input type="text" name="destino" id="destino" placeholder="ej. Miami"> -->
+               <input type="text" class="input_viaje" name="destino" id="destino" placeholder="ej. Miami" onchange="verifDestino()">
             </form>
         <p>
             <button type="button" onclick="drawMap()">

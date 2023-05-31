@@ -4,6 +4,44 @@
 * @param {number} ParámetroB - Explicación de que valor almacena ParámetroB
 * @return Valor que retorna
 */
+
+
+var ciudades=["New York","Paris","Londres","Buenos Aires"];
+function verifOrigen(){
+    var input = document.getElementById("origen").value;
+
+    var flag=0;
+    for (var i = 0; i < ciudades.length; i++) {
+        if (input === ciudades[i]) {
+            flag = 1
+        }
+    }
+    if (flag === 1) {
+        alert("c'est ok");
+    }
+    else {
+        alert("AirFacu ne dessert pas cette ville");
+        input='';
+    }
+}
+
+function verifDestino(){
+    var input = document.getElementById("destino").value;
+    var flug=0;
+    for (var i = 0; i < ciudades.length; i++) {
+        if (input === ciudades[i]) {
+            flug = 1
+        }
+    }
+    if (flug === 1) {
+        alert("c'est ok");
+    }
+    else {
+        alert("AirFacu ne dessert pas cette ville");
+        input='';
+    }
+}
+
 function drawMap() {
 
     const canvas = document.getElementById("myCanvas");
