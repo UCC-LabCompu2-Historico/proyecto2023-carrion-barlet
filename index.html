@@ -14,7 +14,7 @@
     <script type="text/javascript" src="miScript.js"></script>
 </head>
 
-<body>
+<body onload="showMap()">
 
 <header>
     <div>
@@ -62,7 +62,7 @@
                     <option value="Paris"> Paris </option>
                     <option value="Londres"> Londres </option>
                 </select>-->
-                <input type="text" class="input_viaje" name="origen" id="origen" placeholder="ej. Cordoba" onchange="verifOrigen()">
+                <input type="text" name="origen" id="origen" placeholder="ej. Cordoba" onchange="verifOrigen(this.value)">
                 <label for="destino">Destino</label>
                 <!--<select id="destino">
                     <option value="Buenos Aires"> Buenos Aires </option>
@@ -71,7 +71,7 @@
                     <option value="Londres"> Londres </option>
                 </select>-->
 
-               <input type="text" class="input_viaje" name="destino" id="destino" placeholder="ej. Miami" onchange="verifDestino()">
+               <input type="text" name="destino" id="destino" placeholder="ej. Miami" onchange="verifDestino(this.value)">
             </form>
         <p>
             <button type="button" onclick="drawMap()">

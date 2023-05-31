@@ -6,43 +6,86 @@
 */
 
 
-var ciudades=["New York","Paris","Londres","Buenos Aires"];
-function verifOrigen(){
-    var input = document.getElementById("origen").value;
+const ciudades = ["Buenos Aires", "New York", "Londres", "Paris"];
+const coordX = [215,150,320, 330];
+const coordY = [400,180,132,147];
 
+function verifOrigen(origen){
     var flag=0;
     for (var i = 0; i < ciudades.length; i++) {
-        if (input === ciudades[i]) {
+        if (origen === ciudades[i]) {
             flag = 1
         }
     }
     if (flag === 1) {
-        alert("c'est ok");
+        alert("origen ok");
     }
     else {
-        alert("AirFacu ne dessert pas cette ville");
-        input='';
+        alert("AirFacu ne dessert pas cette origen");
+        document.getElementById("origen").value=''
     }
 }
 
-function verifDestino(){
-    var input = document.getElementById("destino").value;
+function verifDestino(destino){
     var flug=0;
     for (var i = 0; i < ciudades.length; i++) {
-        if (input === ciudades[i]) {
+        if (destino === ciudades[i]) {
             flug = 1
         }
     }
     if (flug === 1) {
-        alert("c'est ok");
+        alert("destino ok");
     }
     else {
-        alert("AirFacu ne dessert pas cette ville");
-        input='';
+        alert("AirFacu ne dessert pas cette destnio");
+        document.getElementById("destino").value=''
     }
 }
+/*
+function showMap() {
+    const canvas = document.getElementById("myCanvas");
+    const ctx = canvas.getContext("2d");
+    const img = new Image();
+    img.src = "imagenes/continentes-de-la-tierra.png";
+    ctx.drawImage(img, 0, 100, 512, 300, 0,0, 768, 540);
+    ctx.beginPath();
+}*/
+
 
 function drawMap() {
+    const canvas = document.getElementById("myCanvas");
+    const ctx = canvas.getContext("2d");
+    const img = new Image();
+    img.src = "imagenes/continentes-de-la-tierra.png";
+    ctx.drawImage(img, 0, 100, 512, 300, 0,0, 768, 540);
+    ctx.beginPath();
+    let origen = document.getElementById("origen").value;
+     for (let i = 0; i < ciudades.length; i++) {
+        if (origen === ciudades[i]) {
+            ctx.fillStyle = "#35b70a"
+            ctx.fillRect(coordX[i], coordY[i], 10 , 10)
+            ctx.moveTo(coordX[i],coordY[i]);
+        }
+    }
+    let destino = document.getElementById("destino").value;
+    for (let i = 0; i < ciudades.length; i++) {
+        if (destino === ciudades[i]) {
+            ctx.fillStyle = "#ce0505"
+            ctx.fillRect(coordX[i], coordY[i], 10 , 10)
+            ctx.lineTo(coordX[i],coordY[i]);
+            ctx.strokeStyle="#1f3cad";
+            ctx.lineWidth=3;
+            ctx.closePath();
+            ctx.stroke();
+        }
+    }
+
+}
+
+
+
+
+function blo() {
 
     const canvas = document.getElementById("myCanvas");
     const ctx = canvas.getContext("2d");
