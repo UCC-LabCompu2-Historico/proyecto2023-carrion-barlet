@@ -5,7 +5,6 @@
 * @return Valor que retorna
 */
 
-
 const ciudades = ["Buenos Aires", "New York", "Londres", "Paris"];
 const coordX = [215,150,320, 330];
 const coordY = [400,180,132,147];
