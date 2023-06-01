@@ -54,30 +54,30 @@
             </select>
         </p>
         <p>
+            AirFacu vuela a las siguientes ciudades: New York, Paris, Londres y Buenos Aires.
+        </p>
+        <p>
             <form name="trayecto">
                 <label for="origen">Origen</label>
-                <!--<select id="origen">
-                    <option value="Buenos Aires"> Buenos Aires </option>
-                    <option value="Nueva York"> Nueva York </option>
-                    <option value="Paris"> Paris </option>
-                    <option value="Londres"> Londres </option>
-                </select>-->
                 <input type="text" name="origen" id="origen" placeholder="ej. Cordoba" onchange="verifOrigen(this.value)">
                 <label for="destino">Destino</label>
-                <!--<select id="destino">
-                    <option value="Buenos Aires"> Buenos Aires </option>
-                    <option value="Nueva York"> Nueva York </option>
-                    <option value="Paris"> Paris </option>
-                    <option value="Londres"> Londres </option>
-                </select>-->
+                <input type="text" name="destino" id="destino" placeholder="ej. Miami" onchange="verifDestino(this.value)">
 
-               <input type="text" name="destino" id="destino" placeholder="ej. Miami" onchange="verifDestino(this.value)">
+                <label for="nb_personas">Viajeros</label>
+                <input type="number" name="personas" id="nb_personas">
+                <label for="nb_equipaje">Equipaje</label>
+                <input type="number" name="equipaje" id="nb_equipaje">
             </form>
         <p>
-            <button type="button" onclick="drawMap()">
+            <button class="btn_comprar" type="button" onclick="comprar()">
                 Comprar
             </button>
         </p>
+        <p>
+            El precio de tu billete es:
+            <span id="precio_billete"></span>
+        </p>
+
     </div>
 
     <!-- utilisaremos el canva con la imagen del mapa con javascript para dibujar el trayecto del avion del origen hasta el destino-->
