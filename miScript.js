@@ -4,11 +4,12 @@ const ciudades = ["Buenos Aires", "Nueva York", "Londres", "Paris"];
 const coordX = [215,150,320, 330];
 const coordY = [400,180,132,147];
 
-/* Verifica si el input de la origen es una de las ciudad donde hay airfacu
-* @method verifOrigen
-* @param {string} origen
-* @return nada si la seleccion de la ciudad esta correcta y un alert sino
-*/
+/**
+ *  Verifica si el input de la origen es una de las ciudad donde hay airfacu
+ * @method verifOrigen
+ * @param {string} origen - Origen
+ * @return nada si la seleccion de la ciudad esta correcta y un alert sino
+ */
 function verifOrigen(origen){
     let flag = 0;
     for (let i = 0; i < ciudades.length; i++) {
@@ -23,9 +24,10 @@ function verifOrigen(origen){
         document.getElementById("origen").value=''
     }
 }
-/* Verifica si el input del destino es una de las ciudad donde hay airfacu
+/**
+* Verifica si el input del destino es una de las ciudad donde hay airfacu
 * @method verifDestino
-* @param {string} destino
+* @param {string} destino - Destino
 * @return nada si la seleccion de la ciudad esta correcta y un alert sino
 */
 function verifDestino(destino){
@@ -42,19 +44,19 @@ function verifDestino(destino){
         document.getElementById("destino").value=''
     }
 }
-/* Funcion que llama a las dos funciones principales del programa
+/**
+* Funcion que llama a las dos funciones principales del programa
 * @method comprar
-* @param
 * @return nada
 */
 function comprar(){
     drawMap();
     precio();
 }
-/* Funcion que dibuja una mapa el trayecto entre dos ciudades
+/**
+* Funcion que dibuja una mapa el trayecto entre dos ciudades
 * @method drawMap
-* @param
-* @return nada (visualizar)
+* @return
 */
 function drawMap() {
     const canvas = document.getElementById("myCanvas");
@@ -84,10 +86,9 @@ function drawMap() {
         }
     }
 }
-/* Funcion que calcule el precio de los billetes
+/**
+* Funcion que calcule el precio de los billetes
 * @method precio
-* @param {string} personas
-* @param {string} equipaje
 * @return nada (visualizar)
 */
 function precio(){
