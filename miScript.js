@@ -1,17 +1,17 @@
-/* Descripción de que hace la función
-* @method Nombre de la función
-* @param {string} ParámetroA - Explicación de que valor almacena ParámetroA
-* @param {number} ParámetroB - Explicación de que valor almacena ParámetroB
-* @return Valor que retorna
-*/
 
-const ciudades = ["Buenos Aires", "New York", "Londres", "Paris"];
+
+const ciudades = ["Buenos Aires", "Nueva York", "Londres", "Paris"];
 const coordX = [215,150,320, 330];
 const coordY = [400,180,132,147];
 
+/* Verifica si el input de la origen es una de las ciudad donde hay airfacu
+* @method verifOrigen
+* @param {string} origen
+* @return nada si la seleccion de la ciudad esta correcta y un alert sino
+*/
 function verifOrigen(origen){
-    var flag=0;
-    for (var i = 0; i < ciudades.length; i++) {
+    let flag = 0;
+    for (let i = 0; i < ciudades.length; i++) {
         if (origen === ciudades[i]) {
             flag = 1
         }
@@ -23,10 +23,14 @@ function verifOrigen(origen){
         document.getElementById("origen").value=''
     }
 }
-
+/* Verifica si el input del destino es una de las ciudad donde hay airfacu
+* @method verifDestino
+* @param {string} destino
+* @return nada si la seleccion de la ciudad esta correcta y un alert sino
+*/
 function verifDestino(destino){
-    var flug=0;
-    for (var i = 0; i < ciudades.length; i++) {
+    let flug = 0;
+    for (let i = 0; i < ciudades.length; i++) {
         if (destino === ciudades[i]) {
             flug = 1
         }
@@ -38,21 +42,20 @@ function verifDestino(destino){
         document.getElementById("destino").value=''
     }
 }
-/*
-function showMap() {
-    const canvas = document.getElementById("myCanvas");
-    const ctx = canvas.getContext("2d");
-    const img = new Image();
-    img.src = "imagenes/continentes-de-la-tierra.png";
-    ctx.drawImage(img, 0, 100, 512, 300, 0,0, 768, 540);
-    ctx.beginPath();
-}*/
-
+/* Funcion que llama a las dos funciones principales del programa
+* @method comprar
+* @param
+* @return nada
+*/
 function comprar(){
     drawMap();
     precio();
 }
-
+/* Funcion que dibuja una mapa el trayecto entre dos ciudades
+* @method drawMap
+* @param
+* @return nada (visualizar)
+*/
 function drawMap() {
     const canvas = document.getElementById("myCanvas");
     const ctx = canvas.getContext("2d");
@@ -81,7 +84,12 @@ function drawMap() {
         }
     }
 }
-
+/* Funcion que calcule el precio de los billetes
+* @method precio
+* @param {string} personas
+* @param {string} equipaje
+* @return nada (visualizar)
+*/
 function precio(){
     let personas = document.getElementById("nb_personas").value;
     let equipaje = document.getElementById("nb_equipaje").value;
