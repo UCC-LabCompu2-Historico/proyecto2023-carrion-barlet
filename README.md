@@ -1,5 +1,5 @@
 # AirFacu
-Pagina de la compania de aerolineas AirFacu con pestanas reservas, informaciones y buscador de vuelos.
+Página de la compañía de aerolineas AirFacu con pestanas reservas, informaciones y buscador de vuelos.
 
 ## Link gh-page
 https://github.com/UCC-LabCompu2/proyecto2023-carrion-barlet.git
@@ -8,7 +8,7 @@ https://github.com/UCC-LabCompu2/proyecto2023-carrion-barlet.git
 * Vanessa Carrion
 * Léa Barlet
 
-## Tecnologias Usadas
+## Tecnologías Usadas
 * HTML5
 * CSS3
 
