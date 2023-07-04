@@ -96,10 +96,14 @@ function precio(){
     let equipaje = document.getElementById("nb_equipaje").value;
 
     if(equipaje==="" || personas===""){
-        alert("Completa todos los campos")
+        alert("Completa todos los campos");
+        document.getElementById("nb_personas").value='';
+        document.getElementById("nb_equipaje").value='';
     }
     else if (personas <0 || equipaje <0){
-        alert("Ingresa valores positivas")
+        alert("Ingresa valores positivas");
+        document.getElementById("nb_personas").value='';
+        document.getElementById("nb_equipaje").value='';
     }
     else{
         let precio_billete = 1000;
