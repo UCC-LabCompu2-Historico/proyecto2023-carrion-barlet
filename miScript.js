@@ -110,7 +110,15 @@ function precio(){
         let precio_equipaje = equipaje * 100;
         document.getElementById('precio_billete').innerText = (precio_billete * personas + precio_equipaje).toString();
     }
+}
 
+function continuarReservas() {
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
 
-
+    if(email==="" || password===""){
+        alert("Completa todos los campos");
+        document.getElementById("email").value='';
+        document.getElementById("password").value='';
+    }
 }
