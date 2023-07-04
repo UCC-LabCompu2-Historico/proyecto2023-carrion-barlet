@@ -94,7 +94,19 @@ function drawMap() {
 function precio(){
     let personas = document.getElementById("nb_personas").value;
     let equipaje = document.getElementById("nb_equipaje").value;
-    let precio_billete = 1000;
-    let precio_equipaje = equipaje * 100;
-    document.getElementById('precio_billete').innerText = (precio_billete * personas + precio_equipaje).toString();
+
+    if(equipaje==="" || personas===""){
+        alert("Completa todos los campos")
+    }
+    else if (personas <0 || equipaje <0){
+        alert("Ingresa valores positivas")
+    }
+    else{
+        let precio_billete = 1000;
+        let precio_equipaje = equipaje * 100;
+        document.getElementById('precio_billete').innerText = (precio_billete * personas + precio_equipaje).toString();
+    }
+
+
+
 }
