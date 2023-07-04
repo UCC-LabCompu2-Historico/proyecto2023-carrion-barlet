@@ -58,10 +58,18 @@
         </p>
         <p>
             <form name="trayecto">
-                <label for="origen">Origen</label>
-                <input type="text" name="origen" id="origen" placeholder="ej. Cordoba" onchange="verifOrigen(this.value)">
-                <label for="destino">Destino</label>
-                <input type="text" name="destino" id="destino" placeholder="ej. Miami" onchange="verifDestino(this.value)">
+                <select name="origen" id="origen">
+                    <option value="Nueva York">Nueva York</option>
+                    <option value="Paris">Paris</option>
+                    <option value="Buenos Aires">Buenos Aires</option>
+                    <option value="Londres">Londres</option>
+                </select>
+                <select name="destino" id="destino">
+                    <option value="Nueva York">Nueva York</option>
+                    <option value="Paris">Paris</option>
+                    <option value="Buenos Aires">Buenos Aires</option>
+                    <option value="Londres">Londres</option>
+                </select>
 
                 <label for="nb_personas">Viajeros</label>
                 <input type="number" name="personas" id="nb_personas">

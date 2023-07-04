@@ -98,4 +98,3 @@ function precio(){
     let precio_equipaje = equipaje * 100;
     document.getElementById('precio_billete').innerText = (precio_billete * personas + precio_equipaje).toString();
 }
-
