@@ -4,46 +4,7 @@ const ciudades = ["Buenos Aires", "Nueva York", "Londres", "Paris"];
 const coordX = [215,150,320, 330];
 const coordY = [400,180,132,147];
 
-/**
- *  Verifica si el input de la origen es una de las ciudad donde hay airfacu
- * @method verifOrigen
- * @param {string} origen - Origen
- * @return nada si la seleccion de la ciudad esta correcta y un alert sino
- */
-function verifOrigen(origen){
-    let flag = 0;
-    for (let i = 0; i < ciudades.length; i++) {
-        if (origen === ciudades[i]) {
-            flag = 1
-        }
-    }
-    if (flag === 1) {
-    }
-    else {
-        alert("AirFacu no vuela a este origen");
-        document.getElementById("origen").value=''
-    }
-}
-/**
-* Verifica si el input del destino es una de las ciudad donde hay airfacu
-* @method verifDestino
-* @param {string} destino - Destino
-* @return nada si la seleccion de la ciudad esta correcta y un alert sino
-*/
-function verifDestino(destino){
-    let flug = 0;
-    for (let i = 0; i < ciudades.length; i++) {
-        if (destino === ciudades[i]) {
-            flug = 1
-        }
-    }
-    if (flug === 1) {
-    }
-    else {
-        alert("AirFacu no vuela a este destino");
-        document.getElementById("destino").value=''
-    }
-}
+
 /**
 * Funcion que llama a las dos funciones principales del programa
 * @method comprar
@@ -112,7 +73,12 @@ function precio(){
     }
 }
 
-function continuarReservas() {
+/**
+ * Funcion que verifica si loscampos del formulario son completos
+ * @method toReservas
+ * @return nada
+ */
+function toReservas() {
     let email = document.getElementById("email").value;
     let password = document.getElementById("password").value;
 
@@ -120,6 +86,10 @@ function continuarReservas() {
         alert("Completa todos los campos");
         document.getElementById("email").value='';
         document.getElementById("password").value='';
+    }
+
+    else{
+        window.location = "misReservas.html";
     }
 }
 x=0;
