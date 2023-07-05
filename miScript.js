@@ -122,3 +122,19 @@ function continuarReservas() {
         document.getElementById("password").value='';
     }
 }
+x=0;
+dx=2;
+function animarAvion(){
+   let canvas = document.getElementById("myCanvas");
+   let ctx = canvas.getContext("2d");
+
+
+   let img= new Image;
+   img.src="imagenes/avion_mapa.png";
+   img.onload=function (){
+       ctx.drawImage(img,x,10)   }
+    if (x>canvas.width){
+        x=0;
+    }
+   x+=dx
+}
