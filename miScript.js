@@ -92,8 +92,13 @@ function toReservas() {
         window.location = "misReservas.html";
     }
 }
-x=0;
-dx=2;
+/**
+ * Funcion que dibuja el avion en movimiento
+ * @method animarAvion
+ * @return nada
+ */
+let x=0;
+let dx=2;
 function animarAvion(){
    let canvas = document.getElementById("myCanvas");
    let ctx = canvas.getContext("2d");
@@ -103,8 +108,8 @@ function animarAvion(){
    img.src="imagenes/avion_mapa.png";
    img.onload=function (){
        ctx.drawImage(img,x,10)   }
-    if (x>canvas.width){
-        x=0;
+        if (x > canvas.width) {
+        x = 0;
     }
    x+=dx
 }
