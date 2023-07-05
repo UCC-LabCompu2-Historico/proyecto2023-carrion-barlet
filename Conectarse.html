@@ -47,7 +47,7 @@
   <h2>Conectarse</h2>
   <p>
     <label for="email">Email: </label>
-    <input type="email" name="email" id="email" placeholder="abc@gmail.com">
+    <input type="email" name="email" id="email" placeholder="abc@gmail.com" onchange="verifEmail()">
   </p>
   <p>
     <label for="password">Password: </label>
@@ -55,9 +55,7 @@
   </p>
   <h6>Contrasena olvidada?</h6>
   <p>
-    <button class="btn_continuar" type="button" onclick="continuarReservas()">
-      Continuar
-    </button>
+    <button class="btn_continuar" onclick="toReservas()">Continuar</button>
   </p>
   <h6>No tienes una cuenta ? <a href="index.html">Registrate</a></h6>
 </div>
